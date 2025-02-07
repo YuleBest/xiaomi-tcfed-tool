@@ -1,12 +1,12 @@
 #!/bin/bash
 # By Yule
 # 禁止商业用途
+SCTIPT_DIR="$(dirname $(readlink -f $0))"
 
 INPUT_DIR="$SCTIPT_DIR/decrypted"    # 输入文件目录
 OUTPUT_DIR="$SCTIPT_DIR/encrypted"    # 输出文件目录
 KEY_STRING="thermalopenssl.h"
 
-SCTIPT_DIR="$(dirname $(readlink -f $0))"
 GR='\033[0;32m'
 YE='\033[1;33m'
 RE='\033[0;31m'
